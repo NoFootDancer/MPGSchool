@@ -19,6 +19,10 @@ namespace ProyectoF
     public partial class Form1 : Form
     {
         public String archnom;
+        public int n1 = 5;
+        public int n2 = 5;
+        public int i;
+       
         //public static string InputBox(string Prompt, string Title = "Nombre de Archivo", string DefaultResponse = "", int Xpos = 1, int Ypos = -1);
 
         public Form1()
@@ -81,6 +85,20 @@ namespace ProyectoF
             
             }
 
+        }
+
+        private void Mas_Click(object sender, EventArgs e)
+        {
+            
+
+            TextBox txtt = new TextBox();
+            txtt.Location = new Point(n1,n2);
+            this.Controls.Add(txtt);
+            i++;
+            
+            n2 = n2 + i+20;
+            label1.Visible = true;
+            label1.Text = Convert.ToString(i);
         }//Fin de boton cargar
     }
 }

@@ -33,32 +33,34 @@
             this.tx3 = new System.Windows.Forms.TextBox();
             this.salvar = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.Mas = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // tx1
             // 
-            this.tx1.Location = new System.Drawing.Point(138, 31);
+            this.tx1.Location = new System.Drawing.Point(213, 226);
             this.tx1.Name = "tx1";
             this.tx1.Size = new System.Drawing.Size(100, 20);
             this.tx1.TabIndex = 0;
             // 
             // tx2
             // 
-            this.tx2.Location = new System.Drawing.Point(139, 57);
+            this.tx2.Location = new System.Drawing.Point(107, 226);
             this.tx2.Name = "tx2";
             this.tx2.Size = new System.Drawing.Size(100, 20);
             this.tx2.TabIndex = 1;
             // 
             // tx3
             // 
-            this.tx3.Location = new System.Drawing.Point(139, 83);
+            this.tx3.Location = new System.Drawing.Point(1, 226);
             this.tx3.Name = "tx3";
             this.tx3.Size = new System.Drawing.Size(100, 20);
             this.tx3.TabIndex = 2;
             // 
             // salvar
             // 
-            this.salvar.Location = new System.Drawing.Point(139, 120);
+            this.salvar.Location = new System.Drawing.Point(319, 197);
             this.salvar.Name = "salvar";
             this.salvar.Size = new System.Drawing.Size(75, 23);
             this.salvar.TabIndex = 3;
@@ -68,7 +70,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(164, 163);
+            this.button1.Location = new System.Drawing.Point(319, 226);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 4;
@@ -76,11 +78,33 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // Mas
+            // 
+            this.Mas.Location = new System.Drawing.Point(319, 168);
+            this.Mas.Name = "Mas";
+            this.Mas.Size = new System.Drawing.Size(15, 23);
+            this.Mas.TabIndex = 5;
+            this.Mas.Text = "+";
+            this.Mas.UseVisualStyleBackColor = true;
+            this.Mas.Click += new System.EventHandler(this.Mas_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(341, 168);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(50, 13);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Contador";
+            this.label1.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(400, 258);
+            this.ClientSize = new System.Drawing.Size(400, 427);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.Mas);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.salvar);
             this.Controls.Add(this.tx3);
@@ -101,6 +125,8 @@
         private System.Windows.Forms.TextBox tx3;
         private System.Windows.Forms.Button salvar;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Mas;
+        private System.Windows.Forms.Label label1;
     }
 }
 
