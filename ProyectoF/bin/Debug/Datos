@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<information xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Data1>Dato1</Data1>
+  <Data2>Dato2</Data2>
+  <Data3>Dato3</Data3>
+</information>
