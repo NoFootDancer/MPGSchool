@@ -22,7 +22,6 @@ namespace ProyectoF
         public int n1 = 5;
         public int n2 = 5;
         public int i;
-        public int cLeft = 1;
        
         //public static string InputBox(string Prompt, string Title = "Nombre de Archivo", string DefaultResponse = "", int Xpos = 1, int Ypos = -1);
 
@@ -90,30 +89,21 @@ namespace ProyectoF
 
         private void Mas_Click(object sender, EventArgs e)
         {
+            
 
-            AddNewTextBox();
-           /* TextBox txtt = (TextBox)Controls["txtbx1"];
+            TextBox txtt = new TextBox();
             txtt.Location = new Point(n1,n2);
             this.Controls.Add(txtt);
             i++;
             
             n2 = n2 + i+20;
             label1.Visible = true;
-            label1.Text = Convert.ToString(i);*/
-
-          
-
-        }//Fin de boton cargar
-        public System.Windows.Forms.TextBox AddNewTextBox()
-        {
-            System.Windows.Forms.TextBox txt = new System.Windows.Forms.TextBox();
-            this.Controls.Add(txt);
-            txt.Top = cLeft * 25;
-            txt.Left = 100;
-            txt.Text = "TextBox " + this.cLeft.ToString();
-            cLeft = cLeft + 1;
-            return txt;
+            label1.Text = Convert.ToString(i);
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            TextBoxs.NoControlesVacios(this);
+        }
     }
 }
